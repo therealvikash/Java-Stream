@@ -15,3 +15,6 @@
 
 1. javac Practice.java
 2. java Practice
+
+## Console output
+![image](https://github.com/user-attachments/assets/763b8ea6-62c1-4fa5-a8c6-18fbad9e9561)
