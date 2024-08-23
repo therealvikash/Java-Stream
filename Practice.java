@@ -6,6 +6,9 @@ import java.util.stream.Collectors;
 
 public class Practice {
     public static void main(String[] args) {
+
+        List<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 7, 9, 10, 22, 4, 5));
+
         List<String> languages = new ArrayList<>(
                 Arrays.asList("Java", "Python", "Ruby", "Scala", "Java", "Java", "Python"));
 
@@ -34,6 +37,20 @@ public class Practice {
         employeesListThatNeedsCab(empList);
         contractualEmployeeObjSalaryHike(empList);
         contractualEmployeesNameWithSalaryHike(empList);
+        printSum(nums);
+        printMaxValue(nums);
+    }
+
+    private static void printMaxValue(List<Integer> nums) {
+        System.out.println("Printing max value from a list of integers.");
+        System.out.println(nums.stream().reduce(Integer::max)
+                .orElseThrow(() -> new IllegalArgumentException("Empty List")));
+    }
+
+    private static void printSum(List<Integer> nums) {
+        System.out.println("Printing sum of all value from a list of integers.");
+        int sum = nums.stream().reduce(0, Integer::sum);
+        System.err.println(sum);
     }
 
     private static void printCountOfLangs(List<String> languages) {
