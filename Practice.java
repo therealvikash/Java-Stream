@@ -48,6 +48,7 @@ public class Practice {
     }
 
     private static void printSum(List<Integer> nums) {
+        System.out.println("***********************************************************");
         System.out.println("Printing sum of all value from a list of integers.");
         int sum = nums.stream().reduce(0, Integer::sum);
         System.err.println(sum);
