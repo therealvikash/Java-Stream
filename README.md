@@ -17,4 +17,5 @@
 2. java Practice
 
 ## Console output
-![image](https://github.com/user-attachments/assets/763b8ea6-62c1-4fa5-a8c6-18fbad9e9561)
+![image](https://github.com/user-attachments/assets/28e3fcf9-ba4e-4c81-bb29-790abff7fbe7)
+
